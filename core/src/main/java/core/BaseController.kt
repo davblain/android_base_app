@@ -14,9 +14,10 @@ import toothpick.ktp.KTP
 
 
 abstract class BaseController(@LayoutRes private val layoutRes: Int) : LifecycleController(),
-        ParentScopeProvider {
+    ParentScopeProvider {
 
     private var fragmentScopeName: String = objectScopeName()
+
     protected open val parentScopeName: String by lazy {
         (parentController as? ParentScopeProvider)?.getParentScope() ?: DI.APP_SCOPE
     }
@@ -25,13 +26,16 @@ abstract class BaseController(@LayoutRes private val layoutRes: Int) : Lifecycle
 
     private val TAG: String
         get() = javaClass.simpleName
+
     protected open val customFragmentScopeName = ""
+
     lateinit var scope: Scope
+
     protected open fun installModules(scope: Scope) = Unit
+
     protected open fun initializeView(view: View): Unit = Unit
 
     override fun getParentScope(): String = fragmentScopeName
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup): View {
         log("onCreate")
