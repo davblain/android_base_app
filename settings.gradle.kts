@@ -1,2 +1,2 @@
-include(":app",":core",":mvi")
+include(":app",":core",":mvi",":paging-feature")
 rootProject.name = "My Application"
