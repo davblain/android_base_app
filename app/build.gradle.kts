@@ -25,5 +25,6 @@ android {
 }
 dependencies {
     implementation(project(":mvi"))
+    implementation(project(":paging-feature"))
     kapt("com.github.stephanenicolas.toothpick:toothpick-compiler:$toothpickVersion")
 }

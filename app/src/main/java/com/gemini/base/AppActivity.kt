@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
-import com.gemini.base.sample.TestFlow
+import com.gemini.base.ui.TestFlowController
 import kotlinx.android.synthetic.main.layout_container.*
 
 class AppActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class AppActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         router = Conductor.attachRouter(this, controller_container, savedInstanceState)
-        if (!router.hasRootController()) router.setRoot(RouterTransaction.with(TestFlow()))
+        if (!router.hasRootController()) router.setRoot(RouterTransaction.with(TestFlowController()))
     }
 
     override fun onBackPressed() {

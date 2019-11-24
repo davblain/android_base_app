@@ -1,10 +1,10 @@
-package com.gemini.base.sample
+package com.gemini.base.ui
 
 import core.BaseController
 import android.view.View
 
 import com.gemini.base.R
-import com.gemini.base.sample.test.TestController
+import com.gemini.base.ui.films.TestController
 import core.utils.TabRouter
 import core.utils.TabScreen
 
@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.root_flow.view.*
 
 
 
-class TestFlow : BaseController(R.layout.root_flow) {
+class TestFlowController : BaseController(R.layout.root_flow) {
     private lateinit var homeScreen: TabScreen
     private lateinit var moviesScreen: TabScreen
     private lateinit var favoritesScreen: TabScreen
@@ -22,7 +22,7 @@ class TestFlow : BaseController(R.layout.root_flow) {
         moviesScreen = TabScreen(TestController2())
         favoritesScreen = TabScreen(TestController3())
         tabRouter = TabRouter(
-            controller = this@TestFlow,
+            controller = this@TestFlowController,
             navLayout = tabNavigation,
             startTabScreen = homeScreen
         )
@@ -33,10 +33,6 @@ class TestFlow : BaseController(R.layout.root_flow) {
         }
     }
 
-
-    override fun onAttach(view: View) {
-        super.onAttach(view)
-    }
     override fun handleBack(): Boolean {
         return tabRouter.handleBack()
     }

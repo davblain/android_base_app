@@ -17,10 +17,15 @@ abstract class MviBaseController<T>(layout: Int) : BaseController(layout), Obser
         super.installModules(scope)
         scope.installModules(LifecycleModule(this))
     }
-    override fun initializeView(view: View) {
+
+    final override fun initializeView(view: View) {
         super.initializeView(view)
         binding.setup(this)
+        initView(view)
     }
+
+    abstract fun initView(view: View)
+
     private val uiEvents = PublishSubject.create<T>()
 
     protected fun emit(event: T) {

@@ -26,5 +26,6 @@ dependencies {
     api("com.github.badoo.mvicore:mvicore:$mviVersion")
     api("com.github.badoo.mvicore:mvicore-android:$mviVersion")
     api("io.reactivex.rxjava2:rxjava:2.2.14")
-    api ("io.reactivex.rxjava2:rxandroid:2.1.1")
+    api("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation("javax.inject:javax.inject:1")
 }

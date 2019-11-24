@@ -14,7 +14,8 @@ import io.reactivex.Observable.empty
 import io.reactivex.Observable.just
 import io.reactivex.android.schedulers.AndroidSchedulers
 
-class PagingFeature<T : Any>(pageLoader: ItemPageLoader<T>) :
+
+class PagingFeature<T : Any> (pageLoader: ItemPageLoader<T>) :
     ActorReducerFeature<Wish, Effect, State<T>, News>(
         initialState = State<T>(),
         bootstrapper = BootStrapperImpl(),
