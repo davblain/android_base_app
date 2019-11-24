@@ -12,15 +12,10 @@
 /captures
 .externalNativeBuild
 .cxx
-
 mvi/.idea/
-
 *.bat
-
 mvi/gradlew
-
 gradlew
-
 app/.idea/
-
 gradle/
+.idea/
