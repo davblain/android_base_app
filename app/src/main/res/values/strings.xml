@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_screen_title">Movies</string>
+    <string name="second_screen_title">Books</string>
+    <string name="third_screen_title">Favorites</string>
+</resources>
