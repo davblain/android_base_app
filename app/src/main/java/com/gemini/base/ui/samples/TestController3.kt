@@ -1,4 +1,4 @@
-package com.gemini.base.ui
+package com.gemini.base.ui.samples
 
 import core.BaseController
 import com.gemini.base.R

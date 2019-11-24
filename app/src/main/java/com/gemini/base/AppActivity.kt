@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
-import com.gemini.base.ui.TestFlowController
+import com.gemini.base.ui.samples.TestFlowController
 import kotlinx.android.synthetic.main.layout_container.*
 
 class AppActivity : AppCompatActivity() {

@@ -1,9 +1,9 @@
-package com.gemini.base.ui.films
+package com.gemini.base.ui.samples.films
 
 import android.view.View
 import com.gemini.base.R
-import com.gemini.base.ui.films.event.UiEvent
-import com.gemini.base.ui.films.di.FilmControllerModule
+import com.gemini.base.ui.samples.films.event.UiEvent
+import com.gemini.base.ui.samples.films.di.FilmControllerModule
 import com.gemini.feature.paging.PagingFeature
 import com.gemini.mvi.Binding
 import com.gemini.mvi.MviBaseController

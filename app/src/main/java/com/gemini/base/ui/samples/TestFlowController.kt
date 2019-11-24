@@ -1,10 +1,12 @@
-package com.gemini.base.ui
+package com.gemini.base.ui.samples
 
 import core.BaseController
 import android.view.View
 
 import com.gemini.base.R
-import com.gemini.base.ui.films.TestController
+import com.gemini.base.ui.samples.TestController2
+import com.gemini.base.ui.samples.TestController3
+import com.gemini.base.ui.samples.films.TestController
 import core.utils.TabRouter
 import core.utils.TabScreen
 

@@ -1,8 +1,8 @@
-package com.gemini.base.ui.films
+package com.gemini.base.ui.samples.films
 
 import androidx.lifecycle.LifecycleOwner
 import com.badoo.mvicore.binder.using
-import com.gemini.base.ui.films.event.UiEventTransformer
+import com.gemini.base.ui.samples.films.event.UiEventTransformer
 import com.gemini.feature.paging.PagingFeature
 import com.gemini.mvi.AndroidBinding
 import javax.inject.Inject

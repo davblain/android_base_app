@@ -1,4 +1,4 @@
-package com.gemini.base.ui.films.di
+package com.gemini.base.ui.samples.films.di
 
 import com.gemini.base.data.films.FilmLoader
 import com.gemini.feature.paging.PagingFeature

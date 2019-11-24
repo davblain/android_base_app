@@ -1,4 +1,4 @@
-package com.gemini.base.ui.films.event
+package com.gemini.base.ui.samples.films.event
 
 import com.gemini.feature.paging.PagingFeature
 

@@ -1,6 +1,6 @@
 package com.gemini.base.data.films
 
-import com.gemini.base.ui.films.Film
+import com.gemini.base.ui.samples.films.Film
 import com.gemini.feature.paging.ItemPageLoader
 import com.gemini.feature.paging.Page
 import io.reactivex.Observable
