@@ -10,7 +10,10 @@ class FilmLoader @Inject constructor(): ItemPageLoader<Film> {
     override fun getPage(page: Int): Observable<Page<Film>> =
         Observable.just(
             Page(
-                items = listOf(Film("1", "2")),
+                items = listOf(
+                    Film("1", "Test"),
+                    Film("13", "Test2")
+                ),
                 page = page + 1,
                 hasNextPage = true
             )

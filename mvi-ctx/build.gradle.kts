@@ -1,15 +1,13 @@
-val toothpickVersion = "3.1.0"
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("kapt")
     kotlin("android.extensions")
 }
-apply(from = "${project.rootDir}/codequality/ktlint.gradle.kts")
+
 android {
     compileSdkVersion(29)
     defaultConfig {
-        applicationId = "com.gemini.base"
         minSdkVersion(23)
         targetSdkVersion(29)
         versionCode = 1
@@ -24,9 +22,8 @@ android {
     }
 }
 dependencies {
-    implementation(project(":mvi"))
-    implementation(project(":paging-feature"))
-    implementation ("com.hannesdorfmann:adapterdelegates4-kotlin-dsl:4.3.0")
-    implementation ("com.hannesdorfmann:adapterdelegates4-kotlin-dsl-layoutcontainer:4.3.0")
-    kapt("com.github.stephanenicolas.toothpick:toothpick-compiler:$toothpickVersion")
+    api(project(":core"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.6")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-android:0.10.2")
+    implementation("io.github.reactivecircus.flowbinding:flowbinding-lifecycle:0.10.2")
 }
